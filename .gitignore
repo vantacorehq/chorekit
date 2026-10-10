@@ -1,24 +1,43 @@
-# Python
+# Byte-compiled / cache
 __pycache__/
 *.py[cod]
-*.egg-info/
+*$py.class
+
+# Distribution / packaging
 build/
 dist/
-.pytest_cache/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+pip-wheel-metadata/
 
 # Virtual environments
 .venv/
 venv/
 env/
+ENV/
 
-# Secrets
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Environment / secrets
 .env
+.env.*
 
-# Editors / OS
+# Files created by running chorekit
+.chorekit_moves.json
+exchange_rates.json
+exchange_rates.csv
+
+# IDE / OS
 .idea/
 .vscode/
 .DS_Store
-
-# Default output of "chorekit rates"
-exchange_rates.json
-exchange_rates.csv
+Thumbs.db
