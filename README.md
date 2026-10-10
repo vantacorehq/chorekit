@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="chorekit: sort files, undo, folder reports and exchange rates from one command line tool" width="100%">
-</p>
+![chorekit: sort files, undo, folder reports and exchange rates from one command line tool](assets/banner.svg)
 
 # chorekit
 
@@ -15,42 +13,50 @@ A command line toolkit for everyday chores, written in Python. Sort a messy fold
 
 ## Install
 
-    git clone https://github.com/vantacorehq/chorekit.git
-    cd chorekit
-    pip install -r requirements.txt
+```
+git clone https://github.com/vantacorehq/chorekit.git
+cd chorekit
+pip install -r requirements.txt
+```
 
-Run it without installing:
+Run it from the repository folder:
 
-    python -m chorekit --help
-
-Or install the `chorekit` command:
-
-    pip install .
+```
+python -m chorekit --help
+```
 
 ## Usage
 
 Sort a folder. Look at the plan first, then do it, then undo if needed:
 
-    python -m chorekit sort "C:/Users/Me/Downloads" --dry-run
-    python -m chorekit sort "C:/Users/Me/Downloads"
-    python -m chorekit undo "C:/Users/Me/Downloads"
+```
+python -m chorekit sort "C:/Users/Me/Downloads" --dry-run
+python -m chorekit sort "C:/Users/Me/Downloads"
+python -m chorekit undo "C:/Users/Me/Downloads"
+```
 
 Other ways to sort:
 
-    python -m chorekit sort ~/Downloads --by month
-    python -m chorekit sort ~/Downloads --recursive
+```
+python -m chorekit sort ~/Downloads --by month
+python -m chorekit sort ~/Downloads --recursive
+```
 
 Report on a folder:
 
-    python -m chorekit report ~/Downloads
-    python -m chorekit report ~/Downloads --recursive --top 10 --format csv --output report.csv
+```
+python -m chorekit report ~/Downloads
+python -m chorekit report ~/Downloads --recursive --top 10 --format csv --output report.csv
+```
 
 Exchange rates:
 
-    python -m chorekit rates
-    python -m chorekit rates --base EUR --symbols USD,GBP,PLN --output eur_rates.json
-    python -m chorekit rates --convert 100 --to EUR
-    python -m chorekit rates --format csv
+```
+python -m chorekit rates
+python -m chorekit rates --base EUR --symbols USD,GBP,PLN --output eur_rates.json
+python -m chorekit rates --convert 100 --to EUR
+python -m chorekit rates --format csv
+```
 
 `rates` options: `--base` (default `USD`), `--symbols`, `--convert` with `--to`, `--format` (`json` or `csv`), `--output` (default `exchange_rates.json` or `exchange_rates.csv`), `--retries` (default `3`), `--backoff` (default `1.0` seconds, doubles after each retry).
 
@@ -77,21 +83,40 @@ The picture shows a demo folder with made-up file names and sizes. The exchange 
 
 ## Tests
 
-    python -m unittest discover -s tests -t .
+```
+python -m unittest discover -s tests -t .
+```
 
 36 tests cover sorting, undo, reports, rate fetching with retries (network calls are mocked) and the command line. Tested with Python 3.12.
 
 ## Project layout
 
-    chorekit/
-      cli.py          command line arguments and commands
-      sorter.py       sort and undo
-      report.py       folder report
-      rates.py        exchange rates
-      categories.py   file extensions per category
-    tests/            unit tests
-    assets/           images for this README
+```
+chorekit/
+  cli.py          command line arguments and commands
+  sorter.py       sort and undo
+  report.py       folder report
+  rates.py        exchange rates
+  categories.py   file extensions per category
+tests/            unit tests
+assets/           images for this README
+```
+
+## License
+
+MIT, see [LICENSE](LICENSE).
 
 ## Need custom automation?
 
 Open for freelance work: automation and scripting projects. DM me on X: [@vantacorehq](https://x.com/vantacorehq)
+    
+    
+
+    
+
+   
+
+
+
+
+ 
