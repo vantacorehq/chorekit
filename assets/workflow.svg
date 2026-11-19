@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="How chorekit is built">
+  <rect width="1200" height="280" fill="#07090d"/>
+  <text x="48" y="64" fill="#f5c16c" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="14" letter-spacing="3">HOW CHOREKIT IS BUILT</text>
+  <rect x="48" y="120" width="240" height="72" rx="8" fill="#10151c" stroke="#f5c16c"/>
+  <text x="168" y="162" text-anchor="middle" fill="#e7eef7" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="18">sort</text>
+  <path d="M288 156 H324" stroke="#f5c16c" stroke-width="2"/>
+  <rect x="336" y="120" width="240" height="72" rx="8" fill="#10151c" stroke="#f5c16c"/>
+  <text x="456" y="162" text-anchor="middle" fill="#e7eef7" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="18">undo</text>
+  <path d="M576 156 H612" stroke="#f5c16c" stroke-width="2"/>
+  <rect x="624" y="120" width="240" height="72" rx="8" fill="#10151c" stroke="#f5c16c"/>
+  <text x="744" y="162" text-anchor="middle" fill="#e7eef7" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="18">report</text>
+  <path d="M864 156 H900" stroke="#f5c16c" stroke-width="2"/>
+  <rect x="912" y="120" width="240" height="72" rx="8" fill="#10151c" stroke="#f5c16c"/>
+  <text x="1032" y="162" text-anchor="middle" fill="#e7eef7" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="18">rates</text>
+</svg>
